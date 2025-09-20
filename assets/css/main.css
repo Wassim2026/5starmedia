@@ -19,12 +19,12 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: rgb(0 0 0); /* Default color used for the majority of the text content across the entire website */
- --heading-color: #2b5385; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #000000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #000000; /* Background color for the entire website, including individual sections */
+  --default-color: rgb(255 255 255); /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0272F8; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ffffff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -1366,7 +1366,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #7897bc;
+  background-color: #0272F8;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -1405,7 +1405,7 @@ section,
 .services .service-card:hover::before {
   opacity: 1;
   visibility: visible;
-  background-color: #7897bc;
+  background-color: #0272F8;
 }
 
 .services .service-card:hover h3 a {
@@ -1510,7 +1510,8 @@ section,
 
 .steps .step-icon i {
   font-size: 32px;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: black;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -1534,7 +1535,8 @@ section,
   font-family: var(--heading-font);
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -1548,7 +1550,8 @@ section,
 }
 
 .steps p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
+  color: #000000;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 0;
@@ -1658,12 +1661,14 @@ section,
 }
 
 .call-to-action .features .feature-item i {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: #000000;
   font-size: 1.25rem;
 }
 
 .call-to-action .features .feature-item span {
   font-weight: 500;
+  color: #000000 !important;
 }
 
 .call-to-action .cta-buttons .btn {
@@ -1734,19 +1739,22 @@ section,
 }
 
 .call-to-action .content-right .floating-card .card-icon i {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: black;
   font-size: 1.5rem;
 }
 
 .call-to-action .content-right .floating-card .card-content {
   display: flex;
   flex-direction: column;
+  color: #000000 !important;
 }
 
 .call-to-action .content-right .floating-card .card-content .stats-number {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: #000000 !important;
 }
 
 .call-to-action .content-right .floating-card .card-content .stats-text {
