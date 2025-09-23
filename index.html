@@ -44,240 +44,92 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section" style="margin-top: 50px !important;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 content-col" data-aos="fade-up">
-            <div class="content">
-              <div class="agency-name" style="margin-top: 40px;">
-                <!-- <h5>OUR AGENCY</h5> -->
-              </div>
+<section id="hero" class="hero section" style="position: relative; margin-top: 50px !important; overflow: hidden;">
 
-              <div class="main-heading mt-3">
-                <h1>5STAR <br>Media</h1>
-              </div>
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="hero-video">
+    <source src="assets/clip/clips.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-              <div class="divider"></div>
+  <!-- Dark Overlay -->
+  <div class="hero-overlay"></div>
 
-              <div class="description">
-                <p>
-                  Strategy. Design. Content. Production. <br>
-                  We bring every digital element together to elevate your brand. From marketing campaigns and social media management to branding, web design and full-scale production, we create experiences that capture attention, keep audiences engaged and drive measurable growth. Our end-to-end approach means you get one creative team that understands your vision and delivers results across every platform.
-                </p>
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center" data-aos="fade-up">
+        <div class="content">
 
-
-              <div class="cta-button">
-                <a href="services.html" class="btn">
-                  <span>EXPLORE SERVICES</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
+          <!-- ✅ Only CTA Button -->
+          <div class="cta-button mt-5">
+            <a href="services.html" class="btn">
+              <span>EXPLORE SERVICES</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
 
-          <!-- <div class="col-lg-5" data-aos="zoom-out">
-            <div class="visual-content">
-              <div class="fluid-shape">
-                <img src="assets/img/abstract/abstract-1.webp" alt="Abstract Fluid Shape" class="fluid-img">
-              </div>
-
-              <div class="stats-card">
-                <div class="stats-number">
-                  <h2>10K+</h2>
-                </div>
-                <div class="stats-label">
-                  <p>Successful Campaigns</p>
-                </div>
-                <div class="stats-arrow">
-                  <a href="services.html"><i class="bi bi-arrow-up-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+<style>
+/* Video background */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* sabse peeche */
+}
 
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <div><span>Learn More</span> <span class="description-title">About Us</span></div>
-      </div>End Section Title
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* thoda dark effect */
+  z-index: -1;
+}
 
-      <div class="container">
+/* Center content vertically */
+#hero .content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+}
 
-        <div class="row gx-5 align-items-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-image position-relative">
-              <img src="assets/img/abt.webp" class="img-fluid rounded-4 shadow-sm" alt="About Image" loading="lazy">
-              <div class="experience-badge">
-                <span class="years">16+</span>
-                <span class="text">Years of Expertise</span>
-              </div>
-            </div>
-          </div>
+/* Button styling */
+#hero .btn {
+  background: transparent;   /* invisible bg */
+  color: #fff;               /* white text for visibility */
+  font-weight: bold;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  border: 2px solid #fff;    /* optional: white border to show outline */
+  transition: 0.3s;
+}
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <h2>Transforming Ideas Into Powerful Digital Experiences</h2>
-              <p class="lead">We specialize in building impactful strategies that amplify brand presence, drive engagement, and accelerate growth.</p>
-              <p>By combining innovative marketing, compelling content, and cutting-edge design, we help businesses stand out and connect meaningfully with their audience.</p>
+#hero .btn:hover {
+  background: #1a03ac;       /* blue bg on hover */
+  color: #fff;               /* keep text white */
+  border-color: #1a03ac;     /* match border with bg */
+}
 
-              <div class="row g-4 mt-3">
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="feature-item">
-                    <i class="bi bi-graph-up-arrow"></i>
-                    <h5>Results-Driven Strategies</h5>
-                    <p>We craft tailored digital marketing campaigns designed to maximize reach, boost engagement, and accelerate business growth.</p>
-                  </div>
-                </div>
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="feature-item">
-                    <i class="bi bi-brush-fill"></i>
-                    <h5>Creative Content & Design</h5>
-                    <p>From impactful visuals to compelling storytelling, our team delivers content that strengthens your brand identity and connects with your audience.</p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-              <div class="testimonial-intro">
-                <h3>Our Clients Speak Highly</h3>
-                <p>Hear directly from those who have experienced the impact of our partnership and achieved their strategic goals.</p>
-                <div class="swiper-nav-buttons mt-4">
-                  <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
-                  <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
-              <div class="testimonial-slider swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 800,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "navigation": {
-                      "nextEl": ".slider-next",
-                      "prevEl": ".slider-prev"
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      }
-                    }
-                  }
-                </script>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"Their strategic vision and unwavering commitment to results provided exceptional value. Our operational efficiency has signficantly improved."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-1.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Eleanor Vance</h6>
-                          <span>Operations Manager</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Collaborating with their team was a revelation. Their innovative strategies guided us toward achieving our objectives with precision and speed."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-m-1.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">David Kim</h6>
-                          <span>Product Lead</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"The depth of knowledge and unwavering dedication they bring to every project is exceptional. They've become an essential ally in driving our expansion."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-2.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Isabella Diaz</h6>
-                          <span>Research Analyst</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Their dedication to delivering superior solutions and their meticulous attention to detail have profoundly impacted our corporate growth trajectory."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="assets/img/person/person-f-3.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Olivia Chen</h6>
-                          <span>Development Strategist</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
-
-    <!-- </section>/About Section -->
+</style>
 
     <!-- Services Section -->
     <section id="services" class="services section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
@@ -484,7 +336,7 @@ ul.checklist li::marker {
         <h2>Our Packages</h2>
         <div>
           <span style="color:#0272F8;">Choose the Perfect</span> 
-          <span class="description-title" style="color: #ffd700;">Plan for You</span></div>
+          <span class="description-title" style="color:#0272F8;">Plan for You</span></div>
       </div><!-- End Section Title -->
 
     <!-- Pricing Cards -->
@@ -569,7 +421,7 @@ ul.checklist li::marker {
 <style>
 /* Pricing Card Styles */
 .pricing-card {
-  background: linear-gradient(145deg, #2b5385, #1e3c61);
+  background: linear-gradient(145deg, #4a9cff, #2c5f99);
   color: #fff;
   border-radius: 20px;
   padding: 25px;
