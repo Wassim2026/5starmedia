@@ -12,6 +12,8 @@
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="fav.png" rel="apple-touch-icon">
+<!-- Head section me add karo -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,7 +45,7 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
+  <!-- Hero Section -->
 <section id="hero" class="hero section" style="position: relative; margin-top: 50px !important; overflow: hidden;">
 
   <!-- Background Video -->
@@ -60,8 +62,13 @@
       <div class="col-lg-12 text-center" data-aos="fade-up">
         <div class="content">
 
-          <!-- ✅ Only CTA Button -->
-          <div class="cta-button mt-5">
+          <!--Headline -->
+          <h1 class="hero-title"><b>We Create Digital Experiences</b></h1>
+          <p class="hero-subtitle">Creative Media • Branding • Marketing •
+Content Creation</p>
+
+          <!-- CTA Button -->
+          <div class="cta-button mt-4">
             <a href="services.html" class="btn">
               <span>EXPLORE SERVICES</span>
               <i class="bi bi-arrow-right"></i>
@@ -83,7 +90,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* sabse peeche */
+  z-index: 1;
 }
 
 /* Dark overlay */
@@ -93,7 +100,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* thoda dark effect */
+  background: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
 
@@ -103,30 +110,57 @@
   z-index: 1;
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* full screen height */
+  height: 100vh;
+  text-align: center;
+}
+
+/* Hero text */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0814c8;
+  margin-bottom: 15px;
+  font-family: cursive;
+  padding: 10px 20px;
+  border-radius: 8px;            
+  display: inline-block;      
+  transition: 0.3s;
+}
+.hero-title:hover {
+  color: #0815cb;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #dddddd;
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Button styling */
 #hero .btn {
-  background: transparent;   /* invisible bg */
-  color: #fff;               /* white text for visibility */
+  background: transparent;
+  color: #fff;
   font-weight: bold;
   padding: 14px 32px;
   border-radius: 30px;
   font-size: 1.1rem;
-  border: 2px solid #fff;    /* optional: white border to show outline */
+  border: 5px solid #1a03ac;
   transition: 0.3s;
 }
 
 #hero .btn:hover {
-  background: #1a03ac;       /* blue bg on hover */
-  color: #fff;               /* keep text white */
-  border-color: #1a03ac;     /* match border with bg */
+  background: #1a03ac;
+  color: #fff;
+  border-color: #1a03ac;
 }
-
 </style>
+
+
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -179,7 +213,12 @@ ul.checklist li::marker {
   color: green;
   font-weight: bold;
 }
-
+span{
+  font-family: serif;
+}
+p{
+  font-family: cursive;
+}
 </style>
         <div class="row justify-content-center">
 
@@ -463,17 +502,17 @@ ul.checklist li::marker {
     <section id="steps" class="steps section">
 
   <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
+  <!-- <div class="container section-title" data-aos="fade-up">
     <h2>Steps</h2>
     <div><span>How We</span> <span class="description-title">Work</span></div>
-  </div><!-- End Section Title -->
+  </div> End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="steps-wrapper">
+    <div class="steps-wrapper"> -->
 
       <!-- Step 01 -->
-      <div class="step-item" data-aos="fade-right" data-aos-delay="200">
+      <!-- <div class="step-item" data-aos="fade-right" data-aos-delay="200">
         <div class="step-content">
           <div class="step-icon">
             <i class="bi bi-chat-dots"></i>
@@ -484,10 +523,10 @@ ul.checklist li::marker {
             <p>We begin with an in-depth consultation to understand your brand, goals, and target audience, ensuring a tailored approach from the start.</p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>End Step Item -->
 
       <!-- Step 02 -->
-      <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+      <!-- <div class="step-item" data-aos="fade-left" data-aos-delay="300">
         <div class="step-content">
           <div class="step-icon">
             <i class="bi bi-vector-pen"></i>
@@ -498,10 +537,10 @@ ul.checklist li::marker {
             <p>Our team creates a customized roadmap, combining creative ideas with data-driven strategies to maximize your digital presence and impact.</p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>End Step Item -->
 
       <!-- Step 03 -->
-      <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+      <!-- <div class="step-item" data-aos="fade-right" data-aos-delay="400">
         <div class="step-content">
           <div class="step-icon">
             <i class="bi bi-play-circle"></i>
@@ -512,10 +551,10 @@ ul.checklist li::marker {
             <p>From content creation to campaign management, we bring strategies to life with engaging visuals, compelling storytelling, and flawless execution.</p>
           </div>
         </div>
-      </div><!-- End Step Item -->
+      </div>End Step Item -->
 
       <!-- Step 04 -->
-      <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+      <!-- <div class="step-item" data-aos="fade-left" data-aos-delay="500">
         <div class="step-content">
           <div class="step-icon">
             <i class="bi bi-graph-up-arrow"></i>
@@ -526,13 +565,13 @@ ul.checklist li::marker {
             <p>We monitor, analyze, and optimize performance to ensure sustainable growth, delivering measurable results and continuous improvement.</p>
           </div>
         </div>
-      </div><!-- End Step Item -->
-
+      </div>End Step Item -->
+<!-- 
     </div>
 
   </div>
 
-</section>
+</section> -->
 <!-- /Steps Section -->
 
     <!-- Call To Action Section -->
@@ -1200,6 +1239,9 @@ ul.checklist li::marker {
     </div>
     
     <style>
+      h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
     .input-with-icon {
       position: relative;
       color: black !important;
